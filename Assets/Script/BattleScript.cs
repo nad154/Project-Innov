@@ -1,8 +1,7 @@
 using UnityEngine; 
 using System.Collections; 
 
-public class BattleScript{
-    public string AttackerName; 
+public class BattleScript : MonoBehaviour {
     public GameObject Attacker;
     public GameObject Target; 
     public void StartBattle(){
@@ -12,7 +11,7 @@ public class BattleScript{
         if (attackerBehavior != null){
             attackerBehavior.attackTarget= Target.transform; 
             attackerBehavior.current = MonsterBehaviour.State.attacking; 
-            
+
         }
     }
 

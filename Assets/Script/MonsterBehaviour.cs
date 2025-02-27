@@ -31,11 +31,11 @@ public class MonsterBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (current == State.waiting){
+        // if (current == State.waiting){
 
-        }
-        else if(current == State.attacking && isAttacking){
-            StartCoroutine(AttackAnimation())
+        // }
+        if(current == State.attacking && !isAttacking){
+            StartCoroutine(AttackAnimation());
         }
     }
     IEnumerator AttackAnimation(){
