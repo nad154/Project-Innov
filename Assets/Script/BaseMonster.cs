@@ -4,22 +4,26 @@ using System.Collections;
 using System.Reflection;
 
 [System.Serializable]
-public class BaseMonster
+public class BaseMonster 
 {
     public string monsterName; 
-    public int maxHP, currentHP; 
-    public void Attack() {
-
-    }
+    public int maxHP; 
+    public int currHP; 
     public void Passive(){
 
     }
+
+    public void doDamage(){
+        
+    }
+
 }
 
 [System.Serializable]
-public enum Element{ 
+public enum MonsterElement{ 
     Water, 
     Grass,
     Fire 
 };
+
 
