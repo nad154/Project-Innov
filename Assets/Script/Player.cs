@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class Player
 {
+    public string playerUsername; 
     public int actionPoints; 
-    BaseMonster playerMonster; 
+    public bool activeCA = false; 
+
     
 }
