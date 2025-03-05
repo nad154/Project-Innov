@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 8067259302972193580}
   - component: {fileID: 8136264634601421522}
   - component: {fileID: 364636386050588490}
-  - component: {fileID: 5251510833064187299}
-  - component: {fileID: 1481424449925819908}
+  - component: {fileID: -8054772611639769465}
   m_Layer: 0
   m_Name: monster 1
   m_TagString: Untagged
@@ -110,7 +109,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5251510833064187299
+--- !u!114 &-8054772611639769465
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,30 +118,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3617241932005378825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1178ae1244225d84ab5aab26e40f71c9, type: 3}
+  m_Script: {fileID: 11500000, guid: c2574e81434e01e499902d2c0696b146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monster:
-    monsterName: Baldy
-    maxHP: 15
-    currentHP: 15
-  current: 0
-  attackTarget: {fileID: 0}
---- !u!114 &1481424449925819908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3617241932005378825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1178ae1244225d84ab5aab26e40f71c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monster:
-    monsterName: 
-    maxHP: 0
-    currentHP: 0
-  current: 0
-  attackTarget: {fileID: 0}

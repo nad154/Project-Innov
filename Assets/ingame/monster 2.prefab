@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 3753447269632574432}
   - component: {fileID: 2119538310260334620}
   - component: {fileID: 400962699103961378}
-  - component: {fileID: 2127795806388246127}
-  - component: {fileID: 3120098782505835029}
+  - component: {fileID: -838798760276483315}
   m_Layer: 0
   m_Name: monster 2
   m_TagString: Untagged
@@ -110,7 +109,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2127795806388246127
+--- !u!114 &-838798760276483315
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,30 +118,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3869378006444722807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1178ae1244225d84ab5aab26e40f71c9, type: 3}
+  m_Script: {fileID: 11500000, guid: c2574e81434e01e499902d2c0696b146, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  monster:
-    monsterName: Vulcano
-    maxHP: 20
-    currentHP: 20
-  current: 0
-  attackTarget: {fileID: 0}
---- !u!114 &3120098782505835029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3869378006444722807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1178ae1244225d84ab5aab26e40f71c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  monster:
-    monsterName: 
-    maxHP: 0
-    currentHP: 0
-  current: 0
-  attackTarget: {fileID: 0}
