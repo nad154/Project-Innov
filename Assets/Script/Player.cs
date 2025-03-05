@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 {
     public string _username {get; private set;}
     public int _AP{get; private set;}
+    [SerializeField] BaseMonster[] _monsterList; 
     public List<BaseMonster> MonsterList{get; private set;} = new List<BaseMonster>(); 
     public BaseMonster PlayerMonster{get; set;}
     public bool costActionPoints(int cost){

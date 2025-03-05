@@ -15,8 +15,8 @@ using System.Collections.Generic;
         public float _defense{get; set;}
         public int _defCounter{get; set;}
         public float _buff{get; set;}
-        [SerializeField] public MoveSet[] _moveList; 
-        public MoveSet[] MoveList=> _moveList; 
+        [SerializeField] public List<MoveSet> _moveList = new List<MoveSet>(); 
+        public List<MoveSet> MoveList=> _moveList; 
         public BaseMonster(string monsterName, int maxHP, MonsterElement element){
             _monsterName = monsterName; 
             _maxHP = maxHP; 

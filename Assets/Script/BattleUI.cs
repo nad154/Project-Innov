@@ -28,9 +28,9 @@ public class BattleUI : MonoBehaviour
     }
     public void UpdateMoveButtons(BaseMonster monster){
         // List<MoveSet> moves = monster.MoveList; 
-        MoveSet[] moves = monster.MoveList; 
+        List<MoveSet> moves = monster.MoveList; 
         for(int i=0; i< moveBtn.Length; i++){
-            if(i<moves.Length){
+            if(i<moves.Count){
                 moveBtn[i].gameObject.SetActive(true); 
                 moveBtnTxt[i].text = moves[i].MoveName; 
                 moveBtn[i].onClick.RemoveAllListeners(); 

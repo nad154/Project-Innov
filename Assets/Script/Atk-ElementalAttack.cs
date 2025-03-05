@@ -15,7 +15,8 @@ public class ElementalAttack : BasicAttack
         if(P1.costActionPoints(APCost)){
             if((_attackElement== MonsterElement.Fire && opponent._element == MonsterElement.Grass) || 
             (_attackElement == MonsterElement.Water && opponent._element == MonsterElement.Fire) || 
-            (_attackElement == MonsterElement.Grass && opponent._element == MonsterElement.Water)){
+            (_attackElement == MonsterElement.Grass && opponent._element == MonsterElement.Poison) || 
+            (_attackElement == MonsterElement.Poison && opponent._element == MonsterElement.Water)){
                 mult = 1.5f; 
             }
             opponent._currHP -= ((Damage + attacker._buff)* mult ) - opponent._defense; 

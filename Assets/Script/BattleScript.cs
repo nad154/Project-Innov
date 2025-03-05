@@ -29,7 +29,7 @@ public class BattleScript : MonoBehaviour {
         StartCoroutine(SetupBattle()); 
     }
     IEnumerator SetupBattle(){
-        GameObject Player1Obj = Instantiate(playerprefab, player1Position);; 
+        GameObject Player1Obj = Instantiate(playerprefab, player1Position);
         GameObject Player2Obj = Instantiate(playerprefab, player2Position); 
         UnitPlayer1 = Player1Obj.GetComponent<Player>(); 
         UnitPlayer2 = Player2Obj.GetComponent<Player>();
@@ -49,16 +49,16 @@ public class BattleScript : MonoBehaviour {
         UnitPlayer1.PlayerMonster = monster1;
         UnitPlayer2.PlayerMonster = monster2;
         state = GameState.PLAYER1TURN;
-        player1Turn(); 
+        // player1Turn(); 
         yield return null; 
         
     }
-    public void player1Turn(){
-        PlayerTurn.text = "Player 1"; 
-    }
-    public void player2Turn(){
-        PlayerTurn.text = "Player 2"; 
-    }
+    // public void player1Turn(){
+    //     PlayerTurn.text = "Player 1"; 
+    // }
+    // public void player2Turn(){
+    //     PlayerTurn.text = "Player 2"; 
+    // }
     public void AttackBtn1(){
         if(state != GameState.PLAYER1TURN){
             return; 
