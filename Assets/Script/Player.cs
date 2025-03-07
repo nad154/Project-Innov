@@ -5,11 +5,11 @@ using UnityEngineInternal;
 
 public class Player : MonoBehaviour
 {
-    public string _username {get; private set;}
-    public int _AP{get; private set;}
+    public string _username;
+    public int _AP;
     [SerializeField] BaseMonster[] _monsterList; 
     public List<BaseMonster> MonsterList{get; private set;} = new List<BaseMonster>(); 
-    public BaseMonster PlayerMonster{get; set;}
+    public BaseMonster PlayerMonster;
     public bool costActionPoints(int cost){
         if(_AP >= cost){
             _AP -= cost; 
@@ -19,10 +19,7 @@ public class Player : MonoBehaviour
             return false; 
         }
     }
-    public Player(string username, int ap){
-        _username = username; 
-        _AP = ap; 
-    }
+
     public  void addMonster(BaseMonster monster){
         MonsterList.Add(monster); 
     }
