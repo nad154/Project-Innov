@@ -20,26 +20,44 @@ public class MonsterBehaviour : MonoBehaviour
         attacking
     }
     public State current; 
+    public Transform attackTarget; 
+    private Vector3 originalPosition; 
+    private bool isAttacking = false; 
     void Start()
     {
-        
+        originalPosition = transform.position; 
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (current == State.waiting){
+        // if (current == State.waiting){
 
+        // }
+        if(current == State.attacking && !isAttacking){
+            StartCoroutine(AttackAnimation());
         }
-        else if (current == State.dead){
-
+    }
+    IEnumerator AttackAnimation(){
+        isAttacking = true; 
+        Vector3 targetPosition = attackTarget.position; 
+        float attackSpeed = 5f; 
+        float attackDuration = 0.3f; 
+        float elapsedTime = 0f; 
+        while (elapsedTime < attackDuration){
+            transform.position = Vector3.Lerp(originalPosition, targetPosition, elapsedTime/attackDuration);
+            elapsedTime += Time.deltaTime; 
+            yield return null; 
         }
-        else if (current == State.selecting){
-
+        elapsedTime = 0f; 
+        while (elapsedTime < attackDuration){
+            transform.position = Vector3.Lerp(targetPosition, originalPosition, elapsedTime/attackDuration);
+            elapsedTime += Time.deltaTime; 
+            yield return null; 
         }
-        else if(current == State.attacking){
-
-        }
+        transform.position = originalPosition; 
+        current = State.waiting; 
+        isAttacking = false;
     }
     
     void UpdateBar(){

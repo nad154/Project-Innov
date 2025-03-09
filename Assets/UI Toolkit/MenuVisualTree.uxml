@@ -1,0 +1,7 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/label.uss?fileID=7433441132597879392&amp;guid=be463037f9091764fbfb7c1131355687&amp;type=3#label" />
+    <engine:VisualElement name="Info" style="flex-grow: 1; align-self: flex-end; flex-direction: column; width: 319px;">
+        <engine:Label text="Attacks&#10;" name="Attacks" />
+        <engine:Button text="Attack1" name="AttackButton1" />
+    </engine:VisualElement>
+</engine:UXML>
